@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucy Kim</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><img src="images/logo-extraSmall.png" alt="Initials of the name Lucy Kim">
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><img src="images/logo-extraSmall.png" alt="Initials of the name Lucy Kim"></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+                <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="main">
+        <div class="section_text">
+            <p class="section_text_p">Hello, I'm</p>
+            <h1 class="title">Lucy Kim</h1>
+            <p class="section_title_p">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./images/lkimResume.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="images/linkedin.png" alt="linkedin logo" class="icon" onclick="location.href='https://www.linkedin.com/in/lucykim37/'">
+                <img src="images/github.png" alt="github logo" class="icon" onclick="location.href='https://github.com/purplelucy'">
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-containers">      
+                <div class="text-container">
+                    <p>
+                        Hi, my name is Lucy and I’m an aspiring web developer based in Cary, North Carolina. I’m currently a student at Wake Technical Community College working on my web development degree. Currently, I offer web design services, both front-end and back-end. Check out my work and maybe you’ll find something you like. Please don’t hesitate to contact me and we can discuss the best options for you! Thank you!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <h1 class="title">Services</h1>
+        <div class="services-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+                <p>As a website design service provider, I offer comprehensive solutions tailored to each client's needs. This includes custom website design with responsive layouts, intuitive user experience design, and effective information architecture. I handle the entire design process, from wireframing and prototyping to graphic design and front-end development, ensuring a visually appealing and user-friendly interface. Additionally, I integrate back-end functionality, CMS systems, and e-commerce solutions as needed. With a focus on SEO optimization and analytics tracking, I deliver websites that not only look great but also perform well and drive results for my clients.</p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Web Dev Blog</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://wcet.waketech.edu/lkim2/WEB250/wordpress/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Tourist Website Redesign</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://wcet.waketech.edu/lkim2/WEB125/Lesson10/index.html'">
+                View
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sample Portfolio</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://wcet.waketech.edu/lkim2/WEB210/sampleportfolio/'">
+                View
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog">
+        <h1 class="title">Blog</h1>
+    </section>
+    <section id="contact">
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+        <p><a href="mailto:lkim2@my.waketech.edu">lkim2@my.waketech.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+        <p><a href="https://www.linkedin.com/in/lucykim37/">LinkedIn</a></p>
+        </div>
+    </div>
+    </section>
+    <footer>
+    <nav>
+        <div class="nav-links-container">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 Lucy Kim. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
