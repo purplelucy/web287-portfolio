@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucy Kim</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><a href="#"><img src="images/logo-extraSmall.png" alt="Logo Initials of the name Lucy Kim"></a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="#"><img src="images/logo-extraSmall.png" alt="Logo Initials of the name Lucy Kim"></a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+                <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="main">
+      <div class="section__pic-container">
+        <img src="images/lucy-avatar.png" alt="An animated photo of Lucy Kim wearing a purple sweater." />
+      </div>
+        <div class="section_text">
+            <p class="section_text_p">Hello, I'm</p>
+            <h1 class="title">Lucy Kim</h1>
+            <p class="section_title_p">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./images/lkimResume.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+              <a href="https://www.linkedin.com/in/lucykim37/" target="_blank"><img src="images/linkedin.png" alt="linkedin logo" class="icon"></a>
+              <a href="https://github.com/purplelucy" target="_blank"><img src="images/github.png" alt="github logo" class="icon"></a>
+            </div>          
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-containers">      
+                <div class="text-container">
+                    <p>
+                      Hello! My name is Lucy Kim and I'm a Freelance Web Developer based in Cary, North Carolina. I'm currently a student at Wake Technical Community College in the Web Development program. To give you a little more info about me, I originally started my career in customer service and I just knew it wasn't the right path for me. I took up UX Design, then switched over to Web Development because I found myself enjoying the coding aspect more even though it can be quite frustrating at times. Fast forward two years later and I'm set to graduate next week. It feels unreal if I'm being honest but I'm glad I didn't give up.
+                    </p>
+                    <br>
+                    <p>
+                      If I'm not coding or studying, I'm usually playing games or cooking. Right now, I currently have a fixation on Stardew Valley. It's really fun and stressful. Oddly enough, it kinda reminds me of coding. But enough about my personal life, let's get into what you came here for. Currently, I offer web design services, both front-end and back-end. Check out the services page to get a feel for what I offer and check out my portfolio too! You might find something you like. And please don't hesitate to contact me for additional information and we can discuss the best options for you! See you soon!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+      <h1 class="title">Services</h1>
+      <div class="services-details-container">
+          <div class="details-container">
+              <h2 class="services-sub-title">Design Services</h2>
+              <ul class="services-list">
+                  <li>- Custom Website Design</li>
+                  <li>- Responsive Layouts</li>
+                  <li>- User Experience Design</li>
+                  <li>- Information Architecture</li>
+                  <li>- Wireframing and Prototyping</li>
+                  <li>- Graphic Design</li>
+                  <li>- Front-end Development</li>
+              </ul>
+          </div>
+          <div class="details-container">
+              <h2 class="services-sub-title">Functional Services</h2>
+              <ul class="services-list">
+                  <li>- Back-end Functionality</li>
+                  <li>- CMS Systems Integration</li>
+                  <li>- E-commerce Solutions</li>
+                  <li>- SEO Optimization</li>
+                  <li>- Analytics Tracking</li>
+              </ul>
+          </div>
+      </div>
+  </section>
+  
+
+    <section id="portfolio">
+      <h1 class="title">Portfolio</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/blog.png"
+                alt="A screen capture of a web development blog."
+                class="portfolio-img"
+              />
+            </div>
+            <h2 class="experience-sub-title portfolio-title">Web Dev Blog</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 portfolio-btn"
+                onclick="window.open('https://wcet.waketech.edu/lkim2/WEB250/wordpress/', '_blank')">
+                Visit Site
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/island.png"
+                alt="A screen capture of a redesigned tourist website."
+                class="portfolio-img"
+              />
+            </div>
+            <h2 class="experience-sub-title portfolio-title">Fictional Website Redesign</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 portfolio-btn"
+                onclick="window.open('https://wcet.waketech.edu/lkim2/WEB125/Lesson10/index.html', '_blank')">
+                Visit Site
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/sampleport.png"
+                alt="A screen capture of a fictional portfolio website."
+                class="portfolio-img"
+              />
+            </div>
+            <h2 class="experience-sub-title portfolio-title">Sample Portfolio</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 portfolio-btn"
+                onclick="window.open('https://wcet.waketech.edu/lkim2/WEB210/sampleportfolio/', '_blank')">
+                Visit Site
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog">
+        <h1 class="title">Blog</h1>
+        <div class="blog-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./images/self-care.jpg"
+                  alt="A screen capture of a web development blog."
+                  class="portfolio-img"
+                />
+              </div>
+              <h2 class="experience-sub-title portfolio-title">Learning to Grow</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 portfolio-btn"
+                  onclick="window.open('https://wcet.waketech.edu/lkim2/WEB250/wordpress/give-yourself-a-break/', '_blank')">
+                  Read Article
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./images/javascript.jpg"
+                  alt="A screen capture of a redesigned tourist website."
+                  class="portfolio-img"
+                />
+              </div>
+              <h2 class="experience-sub-title portfolio-title">What is Javascript?</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 portfolio-btn"
+                  onclick="window.open('https://wcet.waketech.edu/lkim2/WEB250/wordpress/what-is-javascript/', '_blank')">
+                  Read Article
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="btn-container">
+      <button class="btn btn-color-2 portfolio-btn blog-btn" onclick="window.open('https://wcet.waketech.edu/lkim2/WEB250/wordpress/', '_blank')">
+        Visit My Blog
+      </button>    
+    </div>
+
+    <section id="contact">
+    <h1 class="title">Contact Me</h1>
+    <div class="contact">
+        <div class="contact-form"> 
+          <form action="#" method="post">
+            <div class="form-group">
+              <input type="text" name="first_name" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="last_name" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <textarea name="comment" placeholder="Comment" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+    </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2024 Lucy Kim. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

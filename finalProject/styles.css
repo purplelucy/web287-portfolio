@@ -1,0 +1,490 @@
+/* main css */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=DM+Serif+Display:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "DM Serif Display", serif;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+    font-size: x-large;
+}
+
+/* transition */ 
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+
+/* desktop nav */
+#desktop-nav {
+    position: sticky; 
+    top: 0;
+    background-color: aliceblue;
+    padding: 10px; 
+    z-index: 1000; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: "DM Serif Display", serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+.nav-links > li > a:hover {
+    background: #9b95d7;
+    transition: .5s;
+    padding: 7px 13px;
+    border-radius: 3px;
+    color: white;
+}
+
+/* hamburger menu */
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+    
+    #hamburger-nav {
+      display: flex;
+      width: 100%; /* Make sure the hamburger navigation spans the full width */
+    }
+  
+    /* Other styles for mobile devices */
+}
+  
+
+#hamburger-nav {
+    display: none;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    background-color: aliceblue;
+    width: 100%; 
+    transform: translateX(100%); /* this starts mobile menu off-screen */
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 8px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    transform: translateX(0);
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+    opacity: 1;
+    transform: none;
+}
+
+/* sections */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section_text {
+    align-self: center;
+    text-align: center;
+    margin-top: 5.5%;
+}
+
+.section_text p {
+    font-weight: 600;
+}
+
+.section_text_p {
+    text-align: center;
+}
+
+.section_title_p {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 1px 2px #282240;
+    color: #7a78b3;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+#about, #services, #portfolio, #blog {
+    padding-top: 15rem;
+}
+
+/* icons */ 
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* buttons */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn-color-1, .btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover , 
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1, 
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+/* ABOUT section*/
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-containers {
+    display: flex;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.text-container {
+    text-align: justify;
+    letter-spacing: -0.5px;
+}
+
+/* SERVICES section */
+
+.services-details-container {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.details-container {
+    flex: 1; 
+    margin: 0 10px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+}
+
+.services-sub-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.services-list {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.services-list li {
+    margin-bottom: 5px;
+    list-style-type: none;
+    font-size: large;
+}
+
+
+/* PORTFOLIO section */
+
+#portfolio {
+    position: relative;
+}
+
+.color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+}
+
+.portfolio-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.portfolio-title {
+    margin: 1rem;
+    color: black;
+    text-align: center;
+}
+
+.portfolio-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+}
+
+.article-container {
+    text-align: center;
+}
+  
+
+/* BLOG section */
+
+#blog {
+    padding-top: 10rem;
+}
+
+.blog-details-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* CONTACT */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+.email-icon {
+    height: 2.5rem;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+  
+.contact-form h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8585ce;
+    color: #fff;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #313131;
+}
+
+input, button, textarea {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  
+
+/* FOOTER SECTION */
+
+footer {
+    height: 5rem;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}
